@@ -1,0 +1,9 @@
+[Unit]
+Description=Caddy Server
+
+[Service]
+ExecStart=/usr/local/bin/caddy -conf /root/Caddyfile
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
